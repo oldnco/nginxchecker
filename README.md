@@ -15,8 +15,7 @@ It inspects the local NGINX Open Source binary and expanded configuration. It se
 ## Run
 
 ```sh
-chmod +x nginx-cve-audit.sh
-sudo ./nginx-cve-audit.sh
+sudo bash ./nginx-cve-audit.sh
 ```
 
 `sudo` lets `nginx -T` read included configuration files. The script reports feature flags only; it does not print or save the configuration. Without sufficient permissions, config-dependent results are `UNKNOWN`.
